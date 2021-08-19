@@ -18,7 +18,7 @@ public class Day01amazonTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.amazon.co.uk/");
         WebElement searchbox= driver.findElement(By.id("twotabsearchtextbox"));
-        searchbox.sendKeys("babstroller"+ Keys.ENTER);
+        searchbox.sendKeys("babybouncer"+ Keys.ENTER);
         WebElement item2=driver.findElement(By.xpath(("(//a[@class='a-link-normal a-text-normal'])[1]")));
 
         item2.click();
